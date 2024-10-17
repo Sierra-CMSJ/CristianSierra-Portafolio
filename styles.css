@@ -1,0 +1,640 @@
+/* Reinicio de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #201960; /* Color de fondo suave para resaltar el contenido */
+}
+
+/* Estilo para las secciones */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Estilos para la barra de navegación fija en la parte superior */
+header {
+    width: 100%;
+    background-color: #1e2a38;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* Sección principal con fondo de GIF */
+#inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Para crear una capa sobre el fondo */
+    overflow: hidden;
+}
+
+#inicio p {
+    margin: 0; /* Elimina el margen entre las líneas */
+    line-height: 0.5; /* Ajusta el espacio entre líneas */
+    font-size: 20px; /* Puedes ajustar el tamaño de fuente si es necesario */
+}
+
+
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/fondo.gif'); /* El GIF como fondo */
+    background-size: cover;
+    background-position: center;
+    /*filter: blur(1px);  Aplica el desenfoque al GIF 
+    opacity: 1; /* Reduce la opacidad para que sea menos notable 
+    z-index: -1; /* Mantiene el fondo detrás del contenido 
+    */
+    z-index: -1;
+}
+
+#inicio h1, #inicio p, #inicio a {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté sobre el fondo */
+    color: rgb(255, 255, 255);
+}
+
+#inicio h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#inicio p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#inicio a {
+    background-color: #00aaff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#inicio a:hover {
+    background-color: #0077cc;
+}
+
+
+/* Sección "Sobre mí" con fondo */
+#sobre-mi {
+    position: relative; /* Para permitir la posición absoluta de los logos */
+    max-width: 1200px; /* Limita el ancho del contenido para que no sea demasiado extenso */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    background-color: #ffffffd3; /* Fondo blanco para el texto */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9); /* Agrega sombra suave para dar profundidad */
+    color: #333;
+}
+
+.contenido-sobre-mi {
+    display: flex; /* Usa flexbox para alinear los bloques horizontalmente */
+    justify-content: space-between; /* Espacio entre bloques */
+    align-items: flex-start; /* Alinea los bloques al principio */
+}
+
+.texto-sobre-mi {
+    flex: 2; /* Ocupa más espacio que el bloque de logos */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-right: 40px; /* Espacio entre el texto y los logos */
+}
+
+#sobre-mi p {
+    margin-bottom: 15px; /* Espaciado entre párrafos */
+    text-align: justify; /* Justifica el texto para un aspecto limpio */
+}
+
+.logos-sobre-mi {
+    flex: 1; /* Ocupa menos espacio */
+    padding: 20px; /* Espaciado alrededor del bloque de logos */
+    background-color: #2e0d92; /* Fondo claro para el bloque de logos */
+    border-radius: 10px; /* Bordes redondeados para el bloque de logos */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9); /* Sombra suave */
+}
+
+.logos-sobre-mi h3 {
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.logos-container {
+    display: flex; /* Usa flexbox para alinear los logos horizontalmente */
+    gap: 10px; /* Espacio entre los logos */
+}
+
+.logos-container img {
+    max-width: 100px; /* Limita el tamaño de los logos */
+    height: auto;
+    border-radius: 5px; /* Da un borde redondeado a las imágenes */
+}
+/* Contenedor para dividir texto y logos en la sección "Sobre mí" */
+.sobre-mi-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre el texto y las imágenes */
+    margin-top: 20px;
+}
+
+.logos-sobre-mi {
+    flex: 1; /* Las imágenes ocupan 1/3 del ancho total */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los logos */
+    align-items: center; /* Centra los logos en la columna */
+}
+
+.logos-sobre-mi img {
+    max-width: 500px; /* Limita el tamaño de los logos */
+    height: auto;
+    border-radius: 15px; /* Da un borde redondeado a las imágenes */
+}
+
+
+
+/* Sección "Habilidades" con fondo diferente */
+#habilidades h2 {
+    font-size: 3rem;
+    color: white;
+    background-color: #1c136f; /* Color de fondo suave para resaltar el contenido */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Estilo del contenedor del carrusel */
+.carousel-container {
+    position: relative;
+    overflow: hidden; /* Oculta los logos que salen de la vista */
+    max-width: 1000px; /* Ajusta el tamaño del carrusel */
+    margin: 0 auto; /* Centra el carrusel */
+}
+
+/* Estilo para los elementos del carrusel */
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content; /* Ajusta el ancho del carrusel según la cantidad de logos */
+    animation: scroll 20s linear infinite; /* Animación de desplazamiento constante */
+}
+
+/* Logos individuales */
+.carousel-item {
+    flex-shrink: 0;
+    margin: 0 15px;
+    transition: transform 0.3s ease; /* Añade un efecto al pasar el cursor sobre los logos */
+    position: relative; /* Necesario para el tooltip */
+}
+
+/* Estilo del tooltip flotante */
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    pointer-events: none; /* Evita que el tooltip interfiera con el mouse */
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+    
+
+.carousel-item:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de los logos al pasar el mouse */
+}
+
+/* Duplicamos el carrusel para hacerlo continuo */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-57%); /* Mueve solo la mitad del carrusel (un ciclo completo) */
+    }
+}
+
+.carousel-container:hover .carousel {
+    animation-play-state: paused; /* Detiene la animación al pasar el mouse */
+}
+
+.prev, .next {
+    display: none; /* Oculta los botones */
+}
+
+
+
+
+/* Seccion de proyectos */
+#proyectos {
+    background-color: #1f157c;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#proyectos h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.proyectos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    position: relative;
+    width: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.overlay p {
+    font-size: 1rem;
+}
+
+.overlay a {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.overlay a:hover {
+    background-color: #0077cc;
+}
+
+/* Estilo para el botón "Ver más" */
+.ver-mas {
+    background-color: #00aaff; /* Color azul llamativo */
+    color: white;
+    font-size: 0.9rem; /* Tamaño más grande */
+    padding: 10px 20px; /* Espaciado interno para hacer el botón más grande */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Elimina subrayado */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.ver-mas:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+
+/* Estilo para el modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #190046;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-left {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.modal-right {
+    width: 50%;
+    text-align: center;
+}
+
+/* Descripción justificada */
+.justificado {
+    text-align: justify;
+}
+
+/* Título del proyecto */
+#modal-title {
+    font-size: 1.5em;
+    color: #32f071; /* Azul oscuro */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#modal-description {
+    font-size: 1em;
+    color: #ffffff; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#modal-proceso {
+    font-size: 1em;
+    color: #ffffff; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#modal-tecnologias {
+    font-size: 1.5em;
+    color: #32f071; /* Azul oscuro */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#modal-galeria {
+    font-size: 1.5em;
+    color: #32f071; /* Azul oscuro */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+/* Estilos para las imágenes */
+.tech-logo {
+    width: 80px;
+    height: auto;
+    margin: 10px;
+}
+
+.tech-logo1 {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+.tech-logo2 {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.project-img2 {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.project {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.cloud {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Contenedor de cada informe */
+.informe-container {
+    margin: 20px;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+
+
+/* Estilo de la descripción */
+
+.informes-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea */
+}
+
+.informe-container {
+    flex: 1 1 calc(25% - 10px); /* Tres columnas, ajusta según el espacio */
+    box-sizing: border-box; /* Asegura que el padding y el border no aumenten el ancho total */
+}
+
+/* Ajustes opcionales para el contenedor */
+.informe-desc {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.informe-link {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.informe-link:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* Estilo para el botón de cerrar */
+.close {
+    color: red;
+    float: inline-end;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: darkred;
+}
+
+
+
+
+
+/* Espacio para info de contacto */
+#contacto {
+    background-color: #1f157c;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto-item {
+    margin: 20px;
+    background-color: #1e2a38;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.contacto-item:hover {
+    transform: scale(1.05);
+}
+
+.contacto-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+.contacto-item p {
+    font-size: 1rem;
+}
+
+.contacto-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacto-item a:hover {
+    color: #00aaff;
+}
+
+/* Estilos para los logotipos */
+.contacto-logo {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Footer oculto hasta que se haga scroll */
+footer {
+    background-color: #1e2a38;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    visibility: hidden; /* El footer estará invisible hasta que se haga scroll */
+    z-index: 10; /* Mantén un z-index superior para el footer */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear; /* Transición suave al aparecer */
+    position: relative; /* No afecta el flujo del documento */
+}
+
+footer.visible {
+    visibility: visible;
+    opacity: 1;
+}
+

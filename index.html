@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Aquí irán los estilos en un futuro -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal de la página -->
+    <section id="inicio">
+        <h1>Hola, soy Cristian Sierra </h1>
+        <p>Ingeniero electrónico enfocado en</p>
+        <p>redes, sistemas IoT y ciberseguridad.</p>
+        <h1><a href="#proyectos">¡Explora mi trabajo y proyectos!</a></h1>
+    </section>
+
+<!-- Sección Sobre mí -->
+<section id="sobre-mi">
+    <h2></h2>
+    <h2>Sobre mí</h2>
+    <div class="sobre-mi-container">
+        <div class="texto-sobre-mi">
+            <p>¡Hola! Soy Cristian Sierra, estudiante de último semestre de Ingeniería Electrónica en la Universidad Industrial de Santander. Me apasiona el aprendizaje continuo y la innovación tecnológica, estoy en búsqueda de nuevas formas de aplicar mis conocimientos en proyectos que generen un impacto real.</p>
+            <p>A lo largo de mi trayectoria, he completado múltiples cursos y certificaciones en áreas como el internet de las cosas IoT, redes, ciberseguridad y un diplomado en project management, lo que me ha permitido desarrollar una visión multidisciplinaria. Entre mis fortalezas están la capacidad para liderar iniciativas técnicas, trabajar en equipo y encontrar soluciones efectivas a problemas complejos. Además, cuento con experiencia en la participación de proyectos innovadores que requieren tanto conocimientos técnicos como habilidades de gestión de proyectos.</p>
+            <p>Mi objetivo es ser parte de un entorno donde pueda seguir creciendo profesionalmente, contribuir a la innovación y aportar a la creación de soluciones tecnológicas que transformen industrias. ¡Estoy dispuesto a asumir nuevos desafíos!.</p>
+            <p>Si estás buscando a alguien comprometido, proactivo y con una visión técnica clara para impulsar el éxito de tus proyectos, no dudes en contactarme.</p>
+        </div>
+        <div class="logos-sobre-mi">
+            <img src="images/foto.png" alt="Logo de la universidad">
+            <img src="images/logos.png">
+            <!--<img src="logo-ACIEM.png" alt="Logo de ACIEM">
+            <img src="logo-SENA.png" alt="Logo SENA">-->
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Sección Habilidades -->
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="carousel-container">
+        <button class="prev">❮</button>
+        <div class="carousel">
+            <img src="images/Python.png" alt="Logo Lenguaje 1" class="carousel-item" data-toolname="Python">
+            <img src="images/SQL.png" alt="Logo Lenguaje 2" class="carousel-item" data-toolname="SQL">
+            <img src="images/Bash.png" alt="Logo Lenguaje 3" class="carousel-item" data-toolname="Bash">
+            <img src="images/Cmas.png" alt="Logo Lenguaje 4" class="carousel-item" data-toolname="C++">
+            <img src="images/kali.png" alt="Logo Lenguaje 5" class="carousel-item" data-toolname="Kali Linux">
+            <img src="images/linux.png" alt="Logo Lenguaje 6" class="carousel-item" data-toolname="Linux">
+            <img src="images/AWS.png" alt="Logo Lenguaje 7" class="carousel-item" data-toolname="AWS">
+            <img src="images/web.png" alt="Logo Lenguaje 8" class="carousel-item" data-toolname="Desarrollo Web">
+            <img src="images/splunk.png" alt="Logo Lenguaje 9" class="carousel-item" data-toolname="Splunk">
+            <img src="images/suricata.png" alt="Logo Lenguaje 10" class="carousel-item" data-toolname="Suricata">
+            <img src="images/hydra.png" alt="Logo Lenguaje 11" class="carousel-item" data-toolname="Hydra">
+            <img src="images/metas.png" alt="Logo Lenguaje 12" class="carousel-item" data-toolname="Metasploit">
+            <img src="images/owasp.png" alt="Logo Lenguaje 13" class="carousel-item" data-toolname="OWASP">
+            <img src="images/wireshark.png" alt="Logo Lenguaje 14" class="carousel-item" data-toolname="Wireshark">
+            <img src="images/cisco.png" alt="Logo Lenguaje 15" class="carousel-item" data-toolname="Packet tracer">
+            <img src="images/Arduino.png" alt="Logo Lenguaje 16" class="carousel-item" data-toolname="Arduino">
+            <img src="images/mqtt.png" alt="Logo Lenguaje 17" class="carousel-item" data-toolname="MQTT">
+            <!-- Añade más imágenes según sea necesario -->
+        </div>
+        <button class="next">❯</button>
+    </div>
+</section>
+<!-- Elemento Tooltip flotante -->
+<div id="tooltip" class="tooltip"></div>
+
+
+    <!-- Espacio para proyectos -->
+
+    <section id="proyectos">
+        <h2>Proyectos / Pariticpación en Competencias</h2>
+        <div class="proyectos-container">
+            <!-- Proyecto 1 -->
+            <div class="proyecto">
+                <img src="images/tdg.png" alt="Proyecto 1">
+                <div class="overlay">
+                    <h3>Ciberseguridad en IoT</h3>
+                    <p>Criptografía en microcontroladores.</p>
+                    <button class="ver-mas" data-project="1">Ver más</button>
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="proyecto">
+                <img src="images/CamaraIoT.png" alt="Proyecto 2">
+                <div class="overlay">
+                    <h3>Cámaras IoT</h3>
+                    <p>Sistema de video-vigilancia en el hogar.</p>
+                    <button class="ver-mas" data-project="2">Ver más</button>
+                </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="proyecto">
+                <img src="images/bus.png" alt="Proyecto 2">
+                <div class="overlay">
+                    <h3>Autobús inteligente</h3>
+                    <p>Geolocaliza tu ruta universitaria UIS.</p>
+                    <button class="ver-mas" data-project="3">Ver más</button>
+                </div>
+            </div>
+            <!-- Proyecto 4 -->
+            <div class="proyecto">
+                <img src="images/nube.png" alt="Proyecto 2">
+                <div class="overlay">
+                    <h3>Despliegue AWS</h3>
+                    <p>Aplicación Web, bases de datos y sistemas de securización en la nube.</p>
+                    <button class="ver-mas" data-project="4">Ver más</button>
+                </div>
+            </div>
+            <!-- Proyecto 5 -->
+            <div class="proyecto">
+                <img src="images/escarabajo.png" alt="Proyecto 2">
+                <div class="overlay">
+                    <h3>Biomimética</h3>
+                    <p>Biodispositivo inspirado en el vuelo del escarabajo pelotero.</p>
+                    <button class="ver-mas" data-project="5">Ver más</button>
+                </div>
+            </div>
+            <!-- Proyecto 6 -->
+            <div class="proyecto">
+                <img src="images/asistenteIA.png" alt="Proyecto 2">
+                <div class="overlay">
+                    <h3>HackDay 2024</h3>
+                    <p>HackDay organizado por Indra Sistemas S.A.</p>
+                    <button class="ver-mas" data-project="6">Ver más</button>
+                </div>
+            </div>
+            <!-- Proyecto 7 -->
+            <div class="proyecto">
+                <img src="images/demolicion.png" alt="Proyecto 2">
+                <div class="overlay">
+                    <h3>Competencia de innovación</h3>
+                    <p>Rally Latinoamericano de innovación 2024</p>
+                    <button class="ver-mas" data-project="7">Ver más</button>
+                </div>
+            </div>
+            <!-- Proyecto 8 -->
+            <div class="proyecto">
+                <img src="images/purple.png" alt="Proyecto 2">
+                <div class="overlay">
+                    <h3>Ciberseguridad Purple-Team</h3>
+                    <button class="ver-mas" data-project="8">Ver más</button>
+                </div>
+            </div>
+            <!-- Proyecto 9 -->
+            <div class="proyecto">
+                <img src="images/portafolio.png" alt="Proyecto 2">
+                <div class="overlay">
+                    <h3>Portafolio profesional</h3>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Ventana Modal para ver detalles -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <!-- Contenedor izquierdo: descripción -->
+            <div class="modal-left">
+                <h3 id="modal-title">Título del Proyecto</h3>
+                <p id="modal-description" class="justificado">Descripción detallada del proyecto...</p>
+                <p id="modal-proceso" class="justificado">Procedimiento: ...</p>
+                <h4 id="modal-tecnologias">Tecnologías Utilizadas</h4>
+                <div id="technologies-logos">
+                    <!-- Aquí se insertarán las imágenes de las tecnologías -->
+                    <img src="images/Bash.png" alt="Logo Lenguaje 3" class="tech-logo">
+                    <img src="images/Python.png" alt="Logo Lenguaje 1" class="tech-logo">
+                    <img src="images/Cmas.png" alt="Logo Lenguaje 4" class="tech-logo">
+                    <img src="images/kali.png" alt="Logo Lenguaje 5" class="tech-logo">
+                    <img src="images/linux.png" alt="Logo Lenguaje 6" class="tech-logo">
+                    <img src="images/AWS.png" alt="Logo Lenguaje 7" class="tech-logo">
+                    <img src="images/web.png" alt="Logo Lenguaje 8" class="tech-logo2">
+                    <img src="images/splunk.png" alt="Logo Lenguaje 9" class="tech-logo">
+                    <img src="images/suricata.png" alt="Logo Lenguaje 10" class="tech-logo">
+                    <img src="images/hydra.png" alt="Logo Lenguaje 11" class="tech-logo">
+                    <img src="images/metas.png" alt="Logo Lenguaje 12" class="tech-logo">
+                    <img src="images/owasp.png" alt="Logo Lenguaje 13" class="tech-logo">
+                    <img src="images/wireshark.png" alt="Logo Lenguaje 14" class="tech-logo">
+                    <img src="images/cisco.png" alt="Logo Lenguaje 15" class="tech-logo">
+                    <img src="images/Arduino.png" alt="Logo Lenguaje 16" class="tech-logo">
+                    <img src="images/mqtt.png" alt="Logo Lenguaje 17" class="tech-logo">
+                    <img src="images/SQL.png" alt="Logo Lenguaje 2" class="tech-logo">
+                    <img src="images/Telegram.png" alt="Logo Lenguaje 2" class="tech-logo">
+                    <img src="images/micropython.png" alt="Logo Lenguaje 2" class="tech-logo">
+                    <img src="images/wasa.png" alt="Logo Lenguaje 2" class="tech-logo">
+                    <img src="images/AWS.png" alt="Logo" class="tech-logo">
+                    <img src="images/Pfsense.png" alt="logo" class="tech-logo">
+                    <img src="images/SquidProxy.png" alt="logo" class="tech-logo">
+                    <img src="images/SecurityOnion.png" alt="logo" class="tech-logo">
+                    <img src="images/solid.png" alt="logo" class="tech-logo">
+                    <img src="images/OpenAI.png" alt="logo" class="tech-logo1">
+                </div>
+            </div>
+
+            <!-- Contenedor derecho: imágenes -->
+            <div class="modal-right">
+                <h4 id="modal-galeria">Galería del Proyecto</h4>
+                <div id="project-images">
+                    <!-- Aquí se insertarán las imágenes del proyecto -->
+                    <img src="images/safaris.png" alt="Imagen 1 del Proyecto" class="project-img">
+                    <img src="images/4044.jpg" alt="Imagen 2 del Proyecto" class="project-img">
+                    <img src="images/cloudproyect.png" alt="Imagen 1 del Proyecto" class="cloud">
+                    <img src="images/certifi.png" alt="Imagen 1 del Proyecto" class="project-img">
+                    <img src="images/biomimetica.jpg" alt="Imagen 1 del Proyecto" class="project-img">
+                    <img src="images/hackton.png" alt="Imagen 1 del Proyecto" class="project">
+                    <img src="images/flujoIA.png" alt="Imagen 2 del Proyecto" class="project-img">
+                    <img src="images/certihack.png" alt="Imagen 2 del Proyecto" class="project-img">
+                    <img src="images/camara.jpg" alt="Imagen 2 del Proyecto" class="project-img">
+                    <img src="images/tienda.jpg" alt="Imagen 2 del Proyecto" class="project-img">
+                    <img src="images/gps.jpg" alt="Imagen 1 del Proyecto" class="project-img">
+                    <img src="images/wasa.jpg" alt="Imagen 2 del Proyecto" class="project-img">
+                    <img src="images/rally.png" alt="Imagen 2 del Proyecto" class="project"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- ESPACIO para contacto-->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contacto-container">
+        <div class="contacto-item">
+            <img src="images/gmail.png" alt="Correo" class="contacto-logo">
+            <h3>Correo Electrónico</h3>
+            <p><a href="mailto:sierra8jerez09@gmail.com">sierra8jerez09@gmail.com</a></p>
+        </div>
+        <div class="contacto-item">
+            <img src="images/linkedin.png" alt="LinkedIn" class="contacto-logo">
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/cristian-sierra-cs" target="_blank">Cristian Sierra</a></p>
+        </div>
+    </div>
+</section>
+
+
+    
+
+    <footer>
+        <p>&copy; 2024 Cristian Sierra - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Aquí conectaremos con JavaScript más adelante -->
+</body>
+</html>
