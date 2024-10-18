@@ -11,7 +11,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #201960; /* Color de fondo suave para resaltar el contenido */
+    background: linear-gradient(to bottom, #360394, #1e90ff); /* De morado a azul */
+    background-attachment: fixed; /* Fija el fondo para que no se repita */
+    background-size: cover; /* Cubre toda la página */
+    height: 100vh;
+    margin: 0;
 }
 
 /* Estilo para las secciones */
@@ -23,7 +27,7 @@ section {
 /* Estilos para la barra de navegación fija en la parte superior */
 header {
     width: 100%;
-    background-color: #1e2a38;
+    background-color: #020461ee;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,7 +63,6 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative; /* Para crear una capa sobre el fondo */
     overflow: hidden;
 }
 
@@ -197,9 +200,9 @@ nav ul li a:hover {
 #habilidades h2 {
     font-size: 3rem;
     color: white;
-    background-color: #1c136f; /* Color de fondo suave para resaltar el contenido */
     padding: 40px 20px;
     text-align: center;
+    background: transparent; /* Secciones transparentes para que el degradado sea visible */
 }
 
 /* Estilo del contenedor del carrusel */
@@ -269,9 +272,9 @@ nav ul li a:hover {
 
 /* Seccion de proyectos */
 #proyectos {
-    background-color: #1f157c;
     padding: 50px 0;
     text-align: center;
+    background: transparent; /* Secciones transparentes para que el degradado sea visible */
 }
 
 #proyectos h2 {
@@ -556,9 +559,9 @@ nav ul li a:hover {
 
 /* Espacio para info de contacto */
 #contacto {
-    background-color: #1f157c;
     padding: 50px 0;
     text-align: center;
+    background: transparent; /* Secciones transparentes para que el degradado sea visible */
 }
 
 #contacto h2 {
@@ -575,7 +578,7 @@ nav ul li a:hover {
 
 .contacto-item {
     margin: 20px;
-    background-color: #1e2a38;
+    background-color: #1723ce63;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -591,7 +594,7 @@ nav ul li a:hover {
 .contacto-item h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #00aaff;
+    color: #ffffff;
 }
 
 .contacto-item p {
@@ -621,7 +624,7 @@ nav ul li a:hover {
 
 /* Footer oculto hasta que se haga scroll */
 footer {
-    background-color: #1e2a38;
+    background-color: #020461ee;
     color: #fff;
     padding: 20px;
     text-align: center;
